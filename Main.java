@@ -44,6 +44,8 @@ public class Main {
         int frame10ko = frame10.gettotalscore();
 
         int lastkoscore = frame1ko + frame2ko + frame3ko + frame4ko + frame5ko + frame6ko + frame7ko + frame8ko + frame9ko + frame10ko;
+        System.out.println("########################################################");
         System.out.println("Great Your total score was " + lastkoscore+ "Hurray!!!!");
+        System.out.println("########################################################");
     }
 }
