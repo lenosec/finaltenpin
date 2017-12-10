@@ -3,9 +3,10 @@ package com.company;
 import java.util.Scanner;
 
 public class Frames {
+    int rollscored1 = getscore();
+    int rollscored2 = getscore();
+    int totalscored = rollscored1+rollscored2;
     public Frames() {
-        int rollscored1 = getscore();
-        int rollscored2 = getscore();
 
         if (rollscored1 == 10 || rollscored2 == 10) {
             int rollscored3 = getscore();
@@ -13,8 +14,13 @@ public class Frames {
         } else {
             Score totalscore = new Score(rollscored1, rollscored2);
         }
-
     }
+
+    public int gettotalscore(){
+        return totalscored;
+    }
+
+
 
     public static int getscore() {
         Scanner getroll1score = new Scanner(System.in);
