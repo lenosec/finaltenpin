@@ -5,21 +5,22 @@ import java.util.Scanner;
 public class Frames {
     int rollscored1 = getscore();
     int rollscored2 = getscore();
-    int totalscored = rollscored1+rollscored2;
+    int totalscored = rollscored1 + rollscored2;
+
     public Frames() {
 
         if (rollscored1 == 10 || rollscored2 == 10) {
             int rollscored3 = getscore();
-            Score totalscore = new Score(rollscored1, rollscored2, rollscored3);
+            Score score = new Score(rollscored1, rollscored2);
+            score.Scoreforall(rollscored3, rollscored1, rollscored2);
         } else {
             Score totalscore = new Score(rollscored1, rollscored2);
         }
     }
 
-    public int gettotalscore(){
+    public int gettotalscore() {
         return totalscored;
     }
-
 
 
     public static int getscore() {

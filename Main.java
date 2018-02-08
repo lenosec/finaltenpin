@@ -39,7 +39,7 @@ public class Main {
         Frames frame9 = new Frames();
         int frame9ko = frame9.gettotalscore();
 
-        System.out.println("For frame ");
+        System.out.println("For frame 10");
         Frames frame10 = new Frames();
         int frame10ko = frame10.gettotalscore();
 

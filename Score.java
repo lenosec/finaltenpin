@@ -9,9 +9,8 @@ public class Score {
         this.roll1score = roll1score;
         this.roll2score = roll2score;
         int totalscore = roll1score + roll2score;
-        System.out.println("So your total score was " + totalscore);
     }
-    public Score(int roll1sparescore,int roll2sparescore,int roll3sparescore){
+    public void Scoreforall(int roll1sparescore, int roll2sparescore, int roll3sparescore){
         this.roll1score = roll1sparescore;
         this.roll2score = roll2sparescore;
         this.roll3score = roll3sparescore;
